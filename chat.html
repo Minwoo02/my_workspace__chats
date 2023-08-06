@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Workspace-Chat</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="chats-btn sign-out">
+      <i class="fa-solid fa-check"></i>
+    </button>
+
+    <div class="comment comment__main">
+      <i class="fa-solid fa-unlock"></i>
+      <span> Sign out</span>
+    </div>
+
+    <div class="backgrounds backgrounds__main">
+      <div class="background" style="background-color: #abc1d1;">
+        <div class="status-bar status-bar__color">
+          <div class="status-bar__column">
+            <span>18:34</span>
+          </div>
+          <div class="status-bar__column">
+            <span>No Service</span>
+          </div>
+          <div class="status-bar__column">
+            <i class="fa-solid fa-signal"></i>
+            <i class="fas fa-wifi"></i>
+            <!-- <span>5G</span> -->
+            <i class="fas fa-battery-full fa-lg"></i>
+          </div>
+        </div>
+
+        <header class="alt-header alt-header__color">
+          <div class="alt-header__column">
+            <a href="chats.html">
+              <i class="fa-solid fa-angle-left"></i>
+            </a>
+          </div>
+          <div class="alt-header__column">
+            <h1 class="alt-header__title">최라미</h1>
+          </div>
+          <div class="alt-header__column">
+            <span><i class="fas fa-search "></i></span>
+            <span><i class="fa-solid fa-bars "></i></span>
+          </div>
+        </header>
+
+        <main class="main-screen main-chat" style="padding-top: 10px">
+          <div class="chat__timestamp">Monday, May 15, 2023</div>
+
+          <div class="message-row message-row--own">
+            <div class="message-row__content">
+              <div class="message__info">
+                <span class="message__bubble">Hi! Nice to meet you!</span>
+                <span class="message__time">21:24</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="message-row">
+            <img src="img/shoes.jpg" />
+            <div class="message-row__content">
+              <span class="message__author">최라미</span>
+              <div class="message__info">
+                <span class="message__bubble">Hi!</span>
+                <span class="message__time">21:27</span>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <form class="reply">
+          <div class="reply__column">
+            <i class="fa-regular fa-square-plus fa-lg"></i>
+          </div>
+          <div class="reply__column">
+            <input type="text" placeholder="Write a message..." />
+            <i class="fa-solid fa-face-laugh-wink fa-lg"></i>
+            <button>
+              <i class="fa-solid fa-arrow-up"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/15b681fb40.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

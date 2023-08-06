@@ -1,0 +1,58 @@
+.screen-header__icons span:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  top: 20px;
+  background-color: white;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 4;
+}
+
+.screen-header__title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  position: relative;
+  margin-left: 17px;
+  font-size: 18px;
+}
+
+.screen-header__dot {
+  position: absolute;
+  bottom: 25px;
+  left: 60px;
+}
+
+.screen-header__dot2 {
+  position: absolute;
+  bottom: 25px;
+  left: 100px;
+}
+
+.screen-header__dot3 {
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+}
+
+@keyframes rotateGear {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: rotateGear 3s ease-in-out infinite;
+}

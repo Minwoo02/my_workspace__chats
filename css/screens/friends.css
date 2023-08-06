@@ -1,0 +1,70 @@
+#friends-display-link {
+  text-align: center;
+  width: 100%;
+  background-color: #fafafa;
+  padding: 10px 0px;
+  position: absolute;
+  top: 90px;
+  z-index: 4;
+}
+
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+  height: 500px;
+}
+
+.friends-screen::-webkit-scrollbar {
+  width: 0px;
+  /* 스크롤바 전체 width 0으로 */
+}
+
+.friends-screen__channel {
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 13px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+#splash-screen img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* 사라지는 것이 아니기 때문에 마우스 걸리지않게 */
+  }
+}
+
+#splash-screen {
+  z-index: 10000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 3s;
+}
+

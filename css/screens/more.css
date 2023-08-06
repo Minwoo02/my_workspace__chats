@@ -1,0 +1,90 @@
+.user-component__subtitle i {
+  margin-left: 5px;
+  color: #ff7b6c;
+}
+
+.icon-row__icon:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.more-suggestions {
+  margin-top: 15px;
+  border-top: var(--main-border);
+  padding-top: 20px;
+}
+
+.more-suggestions__title {
+  margin-bottom: 20px;
+}
+
+.more-suggestions__icons {
+  display: flex;
+}
+
+.more-suggestions__icon {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-suggestions__icon span {
+  text-align: center;
+}
+
+.more-suggestions__icon {
+  cursor: pointer;
+  color: black;
+}
+
+.more-suggestions__icon:last-child {
+  margin-bottom: 110px;
+}
+
+.more-suggestions__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.more-suggestions__icon-image i {
+  font-size: 32px;
+  color: white;
+}
+
+#splash-screen4 img {
+  width: auto;
+  height: 100%;
+  background-size: cover;
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* 사라지는 것이 아니기 때문에 마우스 걸리지않게 */
+  }
+}
+
+#splash-screen4 {
+  z-index: 10000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 0.001s;
+}

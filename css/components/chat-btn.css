@@ -1,0 +1,32 @@
+.chats-btn {
+  position: fixed;
+  z-index: 10000;
+  bottom: 30px;
+  right: 60px;
+  cursor: pointer;
+  background: conic-gradient(from 45deg, #6210cc, #4ec992, #4ec992, #6210cc);
+  border: none;
+  border-radius: 35px;
+  width: 70px;
+  height: 68px;
+  box-shadow: 0px 0px 50px 5px rgba(95, 95, 95, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.chats-btn img {
+  width: 36px;
+  height: 35px;
+}
+
+.chats-btn i {
+  color: white;
+  font-size: 20px;
+}
+
+.chats-btn:hover {
+  bottom: 28px;
+  right: 58px;
+  width: 75px;
+  height: 73px;
+  border-radius: 40px;
+}

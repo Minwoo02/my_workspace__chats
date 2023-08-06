@@ -1,0 +1,164 @@
+.recommended-friends {
+  margin: 10px 0px;
+  padding: 15px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  color: var(--grey-font);
+}
+
+.recommended-friends span {
+  margin: 80px 0px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: var(--grey-font);
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey-font);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-chat:last-child .open-post {
+  margin-bottom: 100px;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: var(--grey-font);
+}
+
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.open-post__members img {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__member-count {
+  color: var(--grey-font);
+  font-size: 14px;
+}
+
+.open-post__members .divider {
+  width: 2px;
+  height: 15px;
+  background-color: var(--grey-font);
+  margin: 0px 5px;
+}
+
+.open-post__member-status {
+  color: #ff8ed3;
+}
+
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+.open-chat__border {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.open-post__photo:hover {
+  cursor: pointer;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__photo:hover i {
+  animation: heartBeat 1s linear infinite;
+}
+
+
+#splash-screen3 img {
+  width: auto;
+  height: 100%;
+  background-size: cover;
+}
+
+@keyframes hideSplashScreen {
+  form {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+    /* 사라지는 것이 아니기 때문에 마우스 걸리지않게 */
+  }
+}
+
+#splash-screen3 {
+  z-index: 10000;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation-delay: 0.001s;
+}

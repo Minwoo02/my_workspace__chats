@@ -1,0 +1,30 @@
+#splash-screen2 img {
+    width: auto;
+    height: 100%;
+    background-size: cover;
+  }
+  
+  @keyframes hideSplashScreen {
+    form {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      visibility: hidden;
+      /* 사라지는 것이 아니기 때문에 마우스 걸리지않게 */
+    }
+  }
+  
+  #splash-screen2 {
+    z-index: 10000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    animation: hideSplashScreen 0.4s ease-in-out forwards;
+    animation-delay: 0.001s;
+  }
