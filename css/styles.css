@@ -54,19 +54,12 @@ body {
   background-color: #ffffff;
   animation: commentAnimation 2s ease-in-out infinite;
 }
-.comment__login {
-  top: 835px;
-  left: 1600px;
-}
-.comment__main {
-  top: 835px;
-  left: 1600px;
-}
+
 .comment:after {
   content: "";
   position: absolute;
-  top: 21px;
-  right: -30px;
+  bottom: 25px;
+  right: -29px;
   border-left: 30px solid #ffffff;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -75,6 +68,14 @@ body {
   font-size: 17px;
   font-weight: 600;
   text-align: center;
+}
+.comment__login {
+  bottom: 30px;
+  right: 180px;
+}
+.comment__main {
+  bottom: 30px;
+  right: 180px;
 }
 
 .backgrounds {
